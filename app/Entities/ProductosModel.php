@@ -17,6 +17,9 @@ class ProductosModel extends model {
         'Fecha_Salida',
     	'ID_Categorias_Pro',
         'ID_Proveedores ',
+        "descripcion", 
+        "precio_compra",
+        "existencia",
     ];
 
     public function Nombre_Categoria_Pro(){

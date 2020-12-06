@@ -22,15 +22,20 @@ Route::resource('help','help');
 Route::get('/home', 'HomeController@index')->name('home');
 Route::resource ('categorias_pro', 'Categoria_proController');
 Route::resource('Telefonos_usuarios','Telefonos_usuariosController');
-
+Route::resource("clientes", "ClientesController");
 Route::resource('usuarios','UsuariosController');
 Route::resource('proveedores','ProveedoresController');
 Route::resource('Direcciones_usuarios','Direcciones_usuariosController');
 Route::resource('Telefonos_proveedores','Telefonos_proveedoresController');
 Route::resource('Productos','ProductosController');
+Route::get("/vender", "VenderController@index")->name("vender.index");
+Route::post("/terminarOCancelarVenta", "VenderController@terminarOCancelarVenta")->name("terminarOCancelarVenta");
+Route::post("/productoDeVenta", "VenderController@agregarProductoVenta")->name("agregarProductoVenta");
+Route::delete("/productoDeVenta", "VenderController@quitarProductoDeVenta")->name("quitarProductoDeVenta");
 
 Route::resource('Direcciones_proveedores','Direcciones_proveedoresController');
 
+Route::resource("ventas", "VentasController");
 
 Route::resource('Datos_proveedor','Datos_proveedorController');
 Route::get('Datos_proveedor-pdf','Datos_proveedorController@exportPDF')->name('Datos_proveedor.pdf');

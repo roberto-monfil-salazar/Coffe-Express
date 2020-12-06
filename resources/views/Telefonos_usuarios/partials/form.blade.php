@@ -12,7 +12,7 @@
     <div class="form-group">
         <label for="">Usuario</label>
         <select class="form-control" name="id" class="col-12">
-            @foreach($Usuarios as $Usuario)
+            @foreach($Usuarios as $Usuario)q
             <option value="{{ $Usuario->id }}" required> {{$Usuario->name}}</option>
             @endforeach
         </select>

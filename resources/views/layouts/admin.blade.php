@@ -143,6 +143,10 @@
                             <span>Ventas</span>
                             <i class="fa fa-angle-left pull-right"></i>
                         </a>
+                        <ul class="treeview-menu">
+                            <li><a href="{{url('ventas')}}"><i class="fa fa-circle-o"></i> Ventas</a></li>
+                            <li><a href="{{url('vender')}}"><i class="fa fa-circle-o"></i> Vender</a></li>
+                        </ul>
                         <!--<ul class="treeview-menu">
                  <li><a href="ventas/venta"><i class="fa fa-circle-o"></i> Ventas</a></li>
                 <li><a href="ventas/cliente"><i class="fa fa-circle-o"></i> Clientes</a></li>
@@ -171,6 +175,7 @@
                         </a>
                         <ul class="treeview-menu">
                             <li><a href="{{url('usuarios')}}"><i class="fa fa-circle-o"></i> Usuarios</a></li>
+                            <li><a href="{{url('clientes')}}"><i class="fa fa-circle-o"></i> Cliente</a></li>
                             <li><a href="{{url('Telefonos_usuarios')}}"><i class="fa fa-circle-o"></i> Telefonos Usuarios</a></li>
                             <li><a href="{{url('Direcciones_usuarios')}}"><i class="fa fa-circle-o"></i> Direcciones Usuarios</a></li>
                             <li><a href="{{url('proveedores')}}"><i class="fa fa-circle-o"></i> Proveedores</a></li>

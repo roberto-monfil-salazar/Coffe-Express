@@ -17,9 +17,12 @@
 				<thead>
 					<th>ID</th>
 					<th>Nombre del Productos</th>
+					<th>Descripcion</th>
+					<th>Precio de compra</th>
 					<th>Precio De Venta del Productos</th>
 					<th>Fecha de la Entrada</th>
 					<th>Fecha de la Salida</th>
+					<th>Existencia</th>
 					<th>Categorias</th>
 					<th>Proveedores</th>
 					<th>opciones</th>
@@ -30,9 +33,12 @@
 					
 					<td>{{$Var->ID_Productos}}</td>
 					<td>{{$Var->Nombre_Productos}}</td>
+					<td>{{$Var->descripcion}}</td>
+					<td>{{$Var->precio_compra}}</td>
 					<th>{{$Var->Precio_DeVenta_Productos}}</th>
 					<th>{{$Var->Fecha_Entrada}}</th>
 					<th>{{$Var->Fecha_Salida}}</th>
+					<td>{{$Var->existencia}}</td>
 					<th>{{$Var->categoria}}</th>
 					<th>{{$Var->Nombre_proveedor}}</th>
 					

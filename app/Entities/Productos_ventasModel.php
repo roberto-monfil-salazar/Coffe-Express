@@ -7,16 +7,10 @@ use Illuminate\Database\Eloquent\Model;
 class Productos_ventasModel extends model {
 	protected $table='productos_ventas';
     protected $primaryKey = 'ID_Productos_Ventas';
-    protected $foreinKey = 'ID_Productos';
-     protected $foreinKey = 'ID_Ventas';
+    protected $foreingKey = 'ID_Productos';
     public $timestamps=false;
-    protected $fillable=[
-    	'Precio_Producto',
-    	'Cantidad_Producto',
-        'Importe',
-    	'ID_Productos',
-        'ID_Ventas'
-    ];
+    protected $fillable = ["id_venta", "descripcion", "codigo_barras", "precio", "cantidad"];
+
 
     public function Nombre_Categoria_Pro(){
         return $this->belongTo('App\Entities\ProductosModel','ID_Productos'.'ID_Productos');

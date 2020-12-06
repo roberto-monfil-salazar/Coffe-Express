@@ -7,17 +7,14 @@ use Illuminate\Database\Eloquent\Model;
 class VentasModel extends model {
 	protected $table='ventas';
     protected $primaryKey = 'ID_Ventas';
-    protected $foreinKey = 'ID_Usuarios';
+    protected $foreinKey = 'id_cliente';
     public $timestamps=false;
     protected $fillable=[
-    	'fecha_venta',
-    	'hora_venta',
-        'Total_ven',
-    	'ID_Usuarios'
+    	'id_cliente'
     ];
 
     public function Nombre_Usuario(){
-        return $this->belongTo('App\Entities\Usuarios','ID_Usuarios'.'ID_Usuarios');
+        return $this->belongTo('App\Entities\Cliente','id_cliente'.'id_cliente');
     }
  
 } 

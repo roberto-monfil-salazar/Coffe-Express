@@ -46,9 +46,12 @@ class ProductosController extends Controller
     public function createUpdateproductosss(Request $request, $productosss)
     {
         $productosss->Nombre_Productos = $request->Nombre_Productos;
+        $productosss->descripcion = $request->descripcion;
+        $productosss->precio_compra = $request->precio_compra;
         $productosss->Precio_DeVenta_Productos = $request->Precio_DeVenta_Productos;
         $productosss->Fecha_Entrada = $request->Fecha_Entrada;
         $productosss->Fecha_Salida = $request->Fecha_Salida;
+        $productosss->existencia = $request->existencia;
         $productosss->ID_Categorias_Pro  = $request->ID_Categorias_Pro;
         $productosss->ID_Proveedores = $request->ID_Proveedores;
         $productosss->save();
